@@ -1,21 +1,23 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
 Route::get('/', function()
 {
 	return View::make('hello');
 });
 
-Route::get('/grid', function(){
+Route::get('grid', function(){
 	return View::make('grid');
+});
+
+Route::get('github', 'UserController@goGithub');
+Route::get('authorize', 'UserController@getAuthorization');
+Route::get('logout', 'UserController@logout');
+
+Route::get('user', ['before' => 'ghauth', function(){
+	return \Session::get('currentUser');
+}]);
+
+Route::group(array(), function(){
+	Route::resource('categories', 'Categories', ['except' => ['create', 'edit']]);
+	Route::resource('projects', 'ProjectsController', ['except' => ['create', 'edit']]);
 });

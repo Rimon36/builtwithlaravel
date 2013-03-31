@@ -1,6 +1,7 @@
 {
 	"require": {
-		"laravel/framework": "4.0.*"
+		"laravel/framework": "4.0.*",
+		"guzzle/guzzle": "~3.1"
 	},
 	"autoload": {
 		"classmap": [
@@ -10,7 +11,10 @@
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"
-		]
+		],
+		"psr-0": {
+			"Bwl": "app/lib"
+		}
 	},
 	"scripts": {
 		"post-update-cmd": "php artisan optimize"

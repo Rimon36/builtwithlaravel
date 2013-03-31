@@ -18,5 +18,9 @@ class AuthServiceProvider extends ServiceProvider {
                 'client_secret' => \Config::get('github.secret')
             ]);
         });
+
+        // Add new filter for checking Github logged in peeps
+        $router = $app->make('router');
+        $router->addFilter('ghauth', '\Bwl\Auth\AuthFilter');
     }
 }

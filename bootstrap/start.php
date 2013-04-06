@@ -24,9 +24,14 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
-	'local' => array('localhost')
-));
+$env = $app->detectEnvironment(function(){
+	if (isset($_SERVER['LaravelEnv'])) {
+		return $_SERVER['LaravelEnv'];
+	}
+	else {
+		return 'local';
+	}
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -52,7 +57,9 @@ $app->bindInstallPaths(require __DIR__.'/paths.php');
 |
 */
 
-require $app->getBootstrapFile();
+$framework = __DIR__.'/../vendor/laravel/framework/src';
+
+require $framework.'/Illuminate/Foundation/start.php';
 
 /*
 |--------------------------------------------------------------------------

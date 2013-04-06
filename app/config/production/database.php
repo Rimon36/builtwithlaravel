@@ -5,9 +5,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'builtwith',
-			'username'  => 'root',
-			'password'  => '',
+			'database'  => $_SERVER['MysqlDb'],
+			'username'  => $_SERVER['MysqlUser'],
+			'password'  => $_SERVER['MysqlPass'],
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

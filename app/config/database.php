@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'database',
+			'database'  => 'builtwith',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',
@@ -71,7 +71,7 @@ return array(
 			'password' => '',
 			'charset'  => 'utf8',
 			'prefix'   => '',
-            'schema'   => 'public',
+			'schema'   => 'public',
 		),
 
 		'sqlsrv' => array(

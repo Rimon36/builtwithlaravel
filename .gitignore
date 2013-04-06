@@ -1,5 +1,5 @@
-app/config/production
 public/bootstrap/.sass-cache
+app/config/local/*
 /bootstrap/compiled.php
 /vendor
 composer.phar

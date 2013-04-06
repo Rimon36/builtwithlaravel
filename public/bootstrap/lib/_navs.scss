@@ -10,6 +10,7 @@
   margin-left: 0;
   margin-bottom: $baseLineHeight;
   list-style: none;
+  outline: 0 !important;
 }
 
 // Make links block level
@@ -102,7 +103,7 @@
 .nav-pills > li > a {
   padding-right: 12px;
   padding-left: 12px;
-  margin-right: 2px;
+  margin-right: 5px;
   line-height: 14px; // keeps the overall height an even number
 }
 
@@ -157,7 +158,8 @@
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
-  color: $white;
+  // color: $white;
+  color: $navbarLinkColor;
   background-color: $linkColor;
 }
 

@@ -192,12 +192,12 @@ $navbarBorder:                    darken($navbarBackground, 12%) !default;
 
 $navbarText:                      $nicered !default;
 $navbarLinkColor:                 $nicered !default;
-$navbarLinkColorHover:            lighten($nicered, 15%) !default;
+$navbarLinkColorHover:            lighten($nicered, 9%) !default;
 $navbarLinkColorActive:           darken($navbarLinkColor, 15%) !default;
 $navbarLinkBackgroundHover:       transparent !default;
 $navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
 
-$navbarBrandColor:                lighten($nicered, 34%) !default;
+$navbarBrandColor:                #fff !default;
 
 // Inverted navbar
 $navbarInverseBackground:                rgb(219,219,219) !default;
@@ -206,7 +206,7 @@ $navbarInverseBorder:                    #FFF !default;
 
 $navbarInverseText:                      $nicered !default;
 $navbarInverseLinkColor:                 $nicered !default;
-$navbarInverseLinkColorHover:            $white !default;
+$navbarInverseLinkColorHover:            lighten($nicered, 9%) !default;
 $navbarInverseLinkColorActive:           $navbarInverseLinkColorHover !default;
 $navbarInverseLinkBackgroundHover:       transparent !default;
 $navbarInverseLinkBackgroundActive:      $navbarInverseBackground !default;

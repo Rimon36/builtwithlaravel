@@ -57,12 +57,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="span12">
-			      <div class="navbar navbar-inverse">
+			      <div class="navbar navbar-inverse filterbar">
 			        <div class="navbar-inner">
 			          <div class="container">
 			            <ul class="nav nav-pills">
 				            <li class="disabled">
-				              <a href="#">ORDER BY:</a> 
+				              <a href="#">Order By</a>
 				            </li>
 			              <li class="active">
 			                <a href="#">NAME A-Z</a> 
@@ -76,7 +76,7 @@
 			            </ul>
 			            <div class="pull-right">
 			            	<form class="navbar-search">
-			            	  <input type="text" class="search-query input-medium" placeholder="Search..."> 
+			            	  <input type="text" class="search-query input-large" placeholder="Search..."> 
 			            	</form>
 			            </div>
 			          </div>

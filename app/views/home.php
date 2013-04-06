@@ -34,12 +34,12 @@
                   <a class="brand" href="#">Built with Laravel</a>
                   <div class="nav-collapse collapse navbar-responsive-collapse">  
                     <ul class="nav pull-right">
-                      <li class='active'><a href="#">POPULAR</a></li>
-                      <li><a href="#">RECENTLY VIEWED</a></li>
-                      <li><a href="#">VIEW ALL</a></li>
-                      <li><a href="#">SUBMIT</a></li>
+                      <li class='active'><a href="#">Featured</a></li>
+                      <li><a href="#">Recently Added</a></li>
+                      <li><a href="#">View All</a></li>
+                      <li><a href="#">Submit</a></li>
                       <li class="dropdown">
-	                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">ACCOUNT <b class="caret"></b></a>
+	                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
 	                      <ul class="dropdown-menu">
 	                        <li><a href="#">Action</a></li>
 	                        <li><a href="#">Another action</a></li>
@@ -54,8 +54,8 @@
               </div><!-- /navbar-inner -->
             </div>
 		<div class="container">
-			<div class="row">
-				<div class="span8">
+			<div class="row-fluid primary-call">
+				<div class="span8 home-left">
 					<div class="hero-unit home-head">
 					  <div id="myCarousel" class="carousel slide">
 					    <ol class="carousel-indicators">
@@ -65,9 +65,9 @@
 					    </ol>
 					    <!-- Carousel items -->
 					    <div class="carousel-inner">
-					      <div class="active item"><img src="http://placehold.it/740x200"></div>
-					      <div class="item"><img src="http://placehold.it/740x200"></div>
-					      <div class="item"><img src="http://placehold.it/740x200"></div>
+					      <div class="active item"><img src="http://placehold.it/740x275"></div>
+					      <div class="item"><img src="http://placehold.it/740x275"></div>
+					      <div class="item"><img src="http://placehold.it/740x275"></div>
 					    </div>
 					    <!-- Carousel nav -->
 					    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -76,7 +76,7 @@
 					  
 					</div>
 				</div>
-				<div class="span4">
+				<div class="span4 home-right">
 					<div class="hero-unit home-head">
 					  <h3>Developer?</h3>
 					  <p>Please sign in or register with Github below</p>

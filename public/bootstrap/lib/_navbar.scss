@@ -109,6 +109,7 @@
 .navbar .input-prepend .btn-group,
 .navbar .input-append .btn-group {
   margin-top: 0; // then undo the margin here so we don't accidentally double it
+  outline: 0 !important;
 }
 
 // Navbar forms
@@ -248,15 +249,19 @@
   float: left;
 }
 
+.navbar .nav > li:not(:last-of-type) {
+  margin-right: 5px;
+}
 // Links
 .navbar .nav > li > a {
   float: none;
   // Vertically center the text given $navbarHeight
   margin-top: 20px;
-  padding: 6px 15px 6px;
+  padding: 5px 10px 5px;
   //padding: (($navbarHeight - $baseLineHeight) / 2) 15px (($navbarHeight - $baseLineHeight) / 2);
   color: $navbarLinkColor;
   text-decoration: none;
+  text-transform: uppercase;
   //text-shadow: 0 1px 0 $navbarBackgroundHighlight;
 }
 .navbar .nav .dropdown-toggle .caret {
@@ -281,8 +286,14 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  @include box-shadow(inset 0 3px 8px rgba(0,0,0,.125));
+  // @include box-shadow(inset 0 3px 8px rgba(0,0,0,.125));
 }
+
+.navbar .nav > .disabled > a,
+.navbar .nav > .disabled > a:hover {
+  color: rgba(0,0,0,0.5);
+}
+
 
 // Navbar button for toggling navbar items in responsive layouts
 // These definitions need to come after '.navbar .btn'
@@ -364,6 +375,8 @@
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-color: $navbarLinkBackgroundActive;
   color: $navbarLinkColorActive;
 }
@@ -442,8 +455,9 @@
   .nav .active > a,
   .nav .active > a:hover,
   .nav .active > a:focus {
-    color: $navbarInverseLinkColorActive;
-    background-color: $navbarInverseLinkBackgroundActive;
+    background-color: #fff;
+    color: $nicered;
+    // background-color: $navbarInverseLinkBackgroundActive;
   }
 
   // Inline text links

@@ -4,5 +4,24 @@
 
 .home-head{
   margin-top: 20px;
-  height: 200px;
+  height: 275px;
+}
+
+.primary-call {
+	>* {
+		margin-left: 0 !important;
+	}
+	.home-left {
+		.hero-unit {
+			background-color: #606060;
+		}
+	}
+	.home-right {
+		width: 34% !important;
+	}
+}
+
+.filterbar .nav-pills {
+	position: relative;
+	top: 2px;
 }

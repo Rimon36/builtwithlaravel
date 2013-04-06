@@ -18,6 +18,7 @@ Route::get('user', ['before' => 'ghauth', function(){
 }]);
 
 Route::group(array(), function(){
-	Route::resource('categories', 'Categories', ['except' => ['create', 'edit']]);
+	Route::resource('categories', 'CategoriesController', ['except' => ['create', 'edit', 'update']]);
 	Route::resource('projects', 'ProjectsController', ['except' => ['create', 'edit']]);
+	Route::post('images/upload', 'ProjectsController@upload');
 });
